@@ -1,6 +1,6 @@
 import express from "express";
 import Students from "../models/Students.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import validateFields from "../helper/validateFields.js";
 
 const router = express.Router();
