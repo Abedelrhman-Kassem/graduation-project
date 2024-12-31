@@ -1,13 +1,12 @@
 {
-  "name": "gradutaion-project",
+  "name": "graduation-project",
   "version": "1.0.0",
-  "description": "Data Analysis Gradutaion Project",
+  "description": "Data Analysis Graduation Project",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "babel . --out-dir dist --ignore node_modules"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abed_Elrhman Kassem",
   "license": "ISC",
@@ -18,26 +17,6 @@
     "nodemon": "^3.1.7",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
-    "pkg": "^5.8.1",
     "sequelize": "^6.37.5"
-  },
-  "pkg": {
-    "assets": [
-      "dist/model/*.js",
-      "dist/routes/*.js",
-      "dist/helper/*.js",
-      "dist/*.js"
-    ],
-    "scripts": [
-      "dist/server.js",
-      "dist/syncTables.js",
-      "dist/db.js"
-    ],
-    "outputPath": "./"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.26.4",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0"
   }
 }
